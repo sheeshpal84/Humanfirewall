@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta property="og:description" content="" />
+    <!-- Favicon cdn link  -->
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/png/favicon-96x96.png">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom Css File   -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>HumanFirewall</title>
+</head>
+
+<body id="ambient">
+
+    <!-- navigation Start html  -->
+    <div class="container-fluid Navgition fixed-top ">
+        <div class="row  py-1 py-md-2">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="assets/png/HumanFirewall_logo.png"
+                                alt="HumanFirewall_Logo" class="img-fluid"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto ">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Resources
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <div id="nav_button">
+                                <button type="button" class="btn nav_btn ">Log In</button>
+                                <button type="button" class="btn nav_btn " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">Sign Up</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class=" modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="row g-3">
+                                                    <div class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputPassword4" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="inputAddress" class="form-label">Address</label>
+                                                        <input type="text" class="form-control" id="inputAddress"
+                                                            placeholder="1234 Main St">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="inputAddress2" class="form-label">Address 2</label>
+                                                        <input type="text" class="form-control" id="inputAddress2"
+                                                            placeholder="Apartment, studio, or floor">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputCity" class="form-label">City</label>
+                                                        <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="inputState" class="form-label">State</label>
+                                                        <select id="inputState" class="form-select">
+                                                            <option selected>Choose...</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label for="inputZip" class="form-label">Zip</label>
+                                                        <input type="text" class="form-control" id="inputZip">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Check me out
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- navigation End html  -->
+
+    <!-- Hero Section Start html  -->
+    <div class="container pb-2 pb-md-5 section" style="margin-top: 80px;">
+        <div class="row py-md-4 mb-md-5">
+            <div class="col-12 col-md-7 my-md-5 py-md-5 hero_content">
+                <h1>Human Cyber Risk. <br>
+                    <span class="typewrite" data-period="500"
+                        data-type='[ "MEASURED!", "MITIGATED!", "MANAGED!", "AUTOMATED!", "ORCHESTRATED!" ]'> <span
+                            class="wrap"></span> </span>
+                </h1>
+                <h4 class="pt-md-4">
+                    A world-first security awareness platform that also <br> <span>works when real attacks
+                        strike.</span>
+                </h4>
+
+                <p class="pt-md-4 pb-md-4">Trusted by <span class="content Count_value" shee="142"> 0
+                    </span> <b>countries</b> worldwide and counting<span class="loading-dots"><span
+                            class="dot one">.</span><span class="dot two">.</span><span
+                            class="dot three">.</span></span></p>
+
+                <button type="button" class="btn">Request a demo</button>
+            </div>
+            <div class="col-12 col-md-5 my-md-5 py-md-5 px-md-0">
+                <img src="assets/png/Hero_Section.png" alt="Hero_Section" class="img-fluid">
+            </div>
+            <!-- Hero section Slider Section  -->
+            <div class="col-12">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-md-10 Logo_slider">
+                        <section class="customer-logos slider">
+                            <div class="slide"><img src="assets/png/logo1.png" alt="logo1" class="img-fluid"></div>
+                            <div class="slide"><img src="assets/png/logo2.png" alt="logo2" class="img-fluid"></div>
+                            <div class="slide"><img src="assets/png/logo1.png" alt="logo4" class="img-fluid"></div>
+                            <div class="slide"><img src="assets/png/logo2.png" alt="logo6" class="img-fluid"></div>
+                            <div class="slide"><img src="assets/png/logo1.png" alt="logo7" class="img-fluid"></div>
+                            <div class="slide"><img src="assets/png/logo2.png" alt="logo7" class="img-fluid"></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Section Slider End  -->
+        </div>
+    </div>
+    <!-- Hero Section End html   -->
+
+    <!-- 1st Scroll Section Start html  -->
+    <div class="container-fluid bg-white sk section">
+        <div class="row p-2  py-md-5 ">
+            <div class="col-12 py-2 my-2 px-0 my-md-5 py-md-5">
+                <div class="container py-md-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-7 p-0 text-center sec_section_content">
+                            <h4>FOR THE FIRST TIME EVER, WE ARE ENABLING</h4>
+                            <h1>MAN + <span>MACHINE </span> </h1>
+                            <p>To transforms an organisation's weakest link, into their strongest line of defence that
+                                also <span>works when real attacks strike,</span> and <span>augments with
+                                    technology</span> what humans lack in attention.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 1st Scroll Section End html   -->
+
+    <!-- 2st Scroll Section Start html  --> 
+    <div class="w-full h-screen overflow-hidden" id="horizontalContainer">
+        <div class="h-screen " id="horizontal">
+          <section class="w-screen ">
+                      <div class="container sec_scroll">
+                          <div class="row d-flex justify-content-around">
+                              <div class="col-12 col-lg-5 d-flex align-items-center">
+                                  <h2>ONE HUMAN CAN <span>CAUSE A BREACH </span> </h1>
+                              </div>
+                              <div class="col-12 col-lg-6 d-flex justify-content-center">
+                                  <img src="/assets/png/left_side.png" alt="scroll" class="img-fluid">
+                              </div>
+                          </div>
+                      </div>
+          </section>
+          <section class="w-screen" style="background-color:#ffffff;">
+           
+                      <div class="container sec_scroll1">
+                          <div class="row d-flex justify-content-around">
+                              <div class="col-12 col-lg-5 d-flex  align-items-center">
+                                  <h2>ONE HUMAN CAN  <span>PROTECT THE ORGANISATION </span> 
+                                  </h2>
+                              </div>
+                              <div class="col-12 col-lg-6 d-flex justify-content-center">
+                                  <img src="/assets/png/right_side.png" alt="scroll" class="img-fluid">
+                              </div>
+                          </div>
+                         </div>
+          </section>
+        </div>
+      </div>
+    <!-- 2st Scroll Section End html  -->
+
+    <!-- 3trd Scroll Section Start html  -->
+    <div class="container-fluid py-md-5">
+        <div class="row my-2 py-2 my-md-5 py-md-5">
+            <div class="col-12">
+                <div class="container trd_scroll p-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-12 col-md-5">
+                            <h3>SCHOOL APPROACH</h3>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-12 col-md-11 mt-5 mt-md-5 pt-1 pt-md-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Teach</h5>
+                                            <p class="card-text">Use personalised media to train individual employees
+                                                through unique campaigns on email and SMS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-11 mt-5 mt-md-5 pt-1 pt-md-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Test</h5>
+                                            <p class="card-text">Use simulation on Email/SMS to test that employees have
+                                                individually understood the fundamental cybersecurity constructs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-11 my-5 mt-md-5 pt-1 pt-md-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Remedy</h5>
+                                            <p class="card-text">Use crowd-powered phishing security mechanisms to
+                                                protect the entire organisation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <h3>HUMAN<span>FIREWALL</span> APPROACH</h3>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-12 col-md-9 mt-5 mt-md-5 pt-1 pt-md-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="assets/Icon/Adaptive Learning.png" alt="Adsptive_Icon"
+                                                class="img-fluid">
+                                            <h5 class="card-title title_trd">Adaptive Learning</h5>
+                                            <p class="card-text mt-4">Pre-assess users to identify their weaknesses and
+                                                provide personalised training in those areas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-9 mt-4 mt-md-4 pt-1 pt-md-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="assets/Icon/Adaptive Learning.png" alt="Test_Icon"
+                                                class="img-fluid">
+                                            <h5 class="card-title title_trd">Test</h5>
+                                            <p class="card-text mt-4">Use simulation on Email/SMS to test that employees
+                                                have individually understood the fundamental cybersecurity constructs
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-9 mt-4 mt-md-4 pt-1 pt-md-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="assets/Icon/Adaptive Learning.png" alt="TEACH_Icon"
+                                                class="img-fluid">
+                                            <h5 class="card-title title_trd">TEACH</h5>
+                                            <p class="card-text mt-4">Use personalised media to train individual
+                                                employees through unique campaigns on email and SMS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-9 mt-4 mt-md-4 pt-1 pt-md-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="assets/Icon/Adaptive Learning.png" alt="REMEDY_Icon"
+                                                class="img-fluid">
+                                            <h5 class="card-title title_trd">REMEDY</h5>
+                                            <p class="card-text mt-4">Use crowd-powered phishing security mechanisms to
+                                                protect the entire organisation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3trd Scroll Section End html  -->
+
+    <!-- 4frt Scroll Section Start html  -->
+    <div class="container-fluid frt py-2 py-md-5">
+        <div class="row py-3 my-2 my-md-5 py-md-5">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-4 nav flex-column  nav-pills left_centent" id="v-pills-tab"
+                            role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active " id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">
+                                <div class="row">
+                                    <div class="col-3 d-flex align-items-center">
+                                        <img src="../assets/Icon/PSYCHOLOGY.png" alt="PSYCHOLOGY" class="img-fluid">
+                                    </div>
+                                    <div class="col-9 text-start">
+                                        <h4> <span>R</span>ISK PROFILES</h4>
+                                        <p>It alters Psychology by automating and gamifying the learning experience.</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">
+                                <div class="row">
+                                    <div class="col-3 d-flex align-items-center">
+                                        <img src="../assets/Icon/PSYCHOLOGY.png" alt="PSYCHOLOGY" class="img-fluid">
+                                    </div>
+                                    <div class="col-9 text-start">
+                                        <h4> <span>P</span>SYCHOLOGY</h4>
+                                        <p>It alters Psychology by automating and gamifying the learning experience.</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">
+                                <div class="row">
+                                    <div class="col-3 d-flex align-items-center">
+                                        <img src="../assets/Icon/PSYCHOLOGY.png" alt="PSYCHOLOGY" class="img-fluid">
+                                    </div>
+                                    <div class="col-9 text-start">
+                                        <h4> <span>P</span>SYCHOLOGY</h4>
+                                        <p>It alters Psychology by automating and gamifying the learning experience.</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                <div class="row">
+                                    <div class="col-3 d-flex align-items-center">
+                                        <img src="../assets/Icon/PSYCHOLOGY.png" alt="PSYCHOLOGY" class="img-fluid">
+                                    </div>
+                                    <div class="col-9 text-start">
+                                        <h4> <span>P</span>SYCHOLOGY</h4>
+                                        <p>It alters Psychology by automating and gamifying the learning experience.</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-last"
+                                aria-selected="false">
+                                <div class="row">
+                                    <div class="col-3 d-flex align-items-center">
+                                        <img src="../assets/Icon/PSYCHOLOGY.png" alt="PSYCHOLOGY" class="img-fluid">
+                                    </div>
+                                    <div class="col-9 text-start">
+                                        <h4> <span>P</span>SYCHOLOGY</h4>
+                                        <p>It alters Psychology by automating and gamifying the learning experience.</p>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-8 tab-content left_centent_box d-flex align-items-center"
+                            id="v-pills-tabContent">
+                            <div class="tab-pane fade show active left_centent_sub" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <p>HF individually trains each employee via an automated and gamified learning
+                                    experience that alters their psychology, transforming them to security ninjas that
+                                    compete with their peers constantly.</p>
+
+                                <h6><span>BENEFICIARY TEAMS: </span> CISO TEAM, GRC TEAM, LEARNING & DEVELOPMENT TEAM
+                                    (L&D)</h6>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <ul>
+                                            <li>Gamified Phishing Simulator</li>
+                                            <li>Cyber LMS</li>
+                                            <li>Policy & Compliance Manager</li>
+                                            <li>Survey & Questionnaire Manager</li>
+                                            <li>Newsletter & Announcement Manager</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <img src="assets/png/Right_Box_img.png" alt="Right_Box" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade left_centent_sub" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">
+                                <p>HF individually trains each employee via an automated and gamified learning
+                                    experience that alters their psychology, transforming them to security ninjas that
+                                    compete with their peers constantly.</p>
+
+                                <h6><span>BENEFICIARY TEAMS: </span> CISO TEAM, GRC TEAM, LEARNING & DEVELOPMENT TEAM
+                                    (L&D)</h6>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <ul>
+                                            <li>Gamified Phishing Simulator</li>
+                                            <li>Cyber LMS</li>
+                                            <li>Policy & Compliance Manager</li>
+                                            <li>Survey & Questionnaire Manager</li>
+                                            <li>Newsletter & Announcement Manager</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <img src="assets/png/Right_Box_img.png" alt="Right_Box" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade left_centent_sub" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+                                <p>HF individually trains each employee via an automated and gamified learning
+                                    experience that alters their psychology, transforming them to security ninjas that
+                                    compete with their peers constantly.</p>
+
+                                <h6><span>BENEFICIARY TEAMS: </span> CISO TEAM, GRC TEAM, LEARNING & DEVELOPMENT TEAM
+                                    (L&D)</h6>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <ul>
+                                            <li>Gamified Phishing Simulator</li>
+                                            <li>Cyber LMS</li>
+                                            <li>Policy & Compliance Manager</li>
+                                            <li>Survey & Questionnaire Manager</li>
+                                            <li>Newsletter & Announcement Manager</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <img src="assets/png/Right_Box_img.png" alt="Right_Box" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade left_centent_sub" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <p>HF individually trains each employee via an automated and gamified learning
+                                    experience that alters their psychology, transforming them to security ninjas that
+                                    compete with their peers constantly.</p>
+
+                                <h6><span>BENEFICIARY TEAMS: </span> CISO TEAM, GRC TEAM, LEARNING & DEVELOPMENT TEAM
+                                    (L&D)</h6>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <ul>
+                                            <li>Gamified Phishing Simulator</li>
+                                            <li>Cyber LMS</li>
+                                            <li>Policy & Compliance Manager</li>
+                                            <li>Survey & Questionnaire Manager</li>
+                                            <li>Newsletter & Announcement Manager</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <img src="assets/png/Right_Box_img.png" alt="Right_Box" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade left_centent_sub" id="v-pills-last" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <p>HF individually trains each employee via an automated and gamified learning
+                                    experience that alters their psychology, transforming them to security ninjas that
+                                    compete with their peers constantly.</p>
+
+                                <h6><span>BENEFICIARY TEAMS: </span> CISO TEAM, GRC TEAM, LEARNING & DEVELOPMENT TEAM
+                                    (L&D)</h6>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <ul>
+                                            <li>Gamified Phishing Simulator</li>
+                                            <li>Cyber LMS</li>
+                                            <li>Policy & Compliance Manager</li>
+                                            <li>Survey & Questionnaire Manager</li>
+                                            <li>Newsletter & Announcement Manager</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <img src="assets/png/Right_Box_img.png" alt="Right_Box" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 4frt Scroll Section End html  -->
+
+    <!-- 5ft Scroll Section Start html  -->
+    <div class="container-fluid py-0 py-md-5">
+        <div class="row my-2 py-2 my-md-5 py-md-5">
+            <div class="col-12 blog_centent">
+                <h2>Latest Blog</h2>
+                <div class="container">
+                    <div class="row blog_section">
+                        <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+                            <div class="card">
+                                <span>13Dec</span>
+                                <img class="card-img-top" src="assets/png/Blog1.png" alt="Blog_1" class="img-fluid">
+                                <div class="card-body">
+                                    <h4 class="card-title">13 December 2021: Possible Omicron Signal in Los Angeles</h4>
+                                    <p class="card-text">Looking at the week over week smoothed incidence rate of
+                                        COVID-19 infection in Los Angeles, we are now...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+                            <div class="card">
+                                <span>13Dec</span>
+                                <img class="card-img-top" src="assets/png/Blog2.png" alt="Blog_2" class="img-fluid">
+                                <div class="card-body">
+                                    <h4 class="card-title">13 December 2021: Possible Omicron Signal in Los Angeles</h4>
+                                    <p class="card-text">Looking at the week over week smoothed incidence rate of
+                                        COVID-19 infection in Los Angeles, we are now...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+                            <div class="card">
+                                <span>13Dec</span>
+                                <img class="card-img-top" src="assets/png/Blog3.png" alt="Blog_3" class="img-fluid">
+                                <div class="card-body">
+                                    <h4 class="card-title">13 December 2021: Possible Omicron Signal in Los Angeles</h4>
+                                    <p class="card-text">Looking at the week over week smoothed incidence rate of
+                                        COVID-19 infection in Los Angeles, we are now...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 5ft Scroll Section End html  -->
+
+    <!-- 6Sx Scroll Section Start html  -->
+    <div class="container-fluid py-0 py-md-5 testimonial_section">
+        <div class="row my-2 py-2 my-md-5 py-md-5">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 testimonial_heading text-center">
+                            <h2>TESTIMONIAL <br>
+                                <span>WHAT CLIENTS SAY</span>
+                            </h2>
+                        </div>
+                        <div class="col-12">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner py-5">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 ">
+                                                <div class="testimonial">
+                                                    <div class="">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/png/slider.png" alt="Slider"
+                                                                    class="img-fluid img_border ">
+                                                            </div>
+                                                            <div class="col-9 img_text">
+                                                                <p class="p-0 m-0">jAVED sHIM <br>
+                                                                    <span>lorem ipsum</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-12 text-center py-1 py-md-1">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                            </div>
+                                                            <div class="col-12 px-2 px-md-4 py-2 py-md-4">
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/left.png" alt="left"
+                                                                            class="img-fluid position-absolute bottom-50">
+                                                                    </div>
+                                                                </div>
+                                                                <p class="text-center p-0 m-0 testimonial_read">Lorem
+                                                                    Ipsum
+                                                                    is simply dummy
+                                                                    text of the printing and typesetting industry.
+                                                                    1500s,
+                                                                    Ipsum is typesetting industry. </p>
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/right.png" alt="left"
+                                                                            class="img-fluid position-absolute end-0 top-100">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 text-end">
+                                                                <br>
+                                                                <a href="#">READ MORE</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                                                <div class=" testimonial">
+                                                    <div class="">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/png/slider.png" alt="Slider"
+                                                                    class="img-fluid img_border ">
+                                                            </div>
+                                                            <div class="col-9 img_text">
+                                                                <p class="p-0 m-0">jAVED sHIM <br>
+                                                                    <span>lorem ipsum</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-12 text-center py-1 py-md-1">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                            </div>
+                                                            <div class="col-12 px-2 px-md-4 py-2 py-md-4">
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/left.png" alt="left"
+                                                                            class="img-fluid position-absolute bottom-50">
+                                                                    </div>
+                                                                </div>
+                                                                <p class="text-center p-0 m-0 testimonial_read">Lorem
+                                                                    Ipsum
+                                                                    is simply dummy
+                                                                    text of the printing and typesetting industry.
+                                                                    1500s,
+                                                                    Ipsum is typesetting industry. </p>
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/right.png" alt="left"
+                                                                            class="img-fluid position-absolute end-0 top-100">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 text-end">
+                                                                <br>
+                                                                <a href="#">READ MORE</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                                                <div class="testimonial">
+                                                    <div class="">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/png/slider.png" alt="Slider"
+                                                                    class="img-fluid img_border ">
+                                                            </div>
+                                                            <div class="col-9 img_text">
+                                                                <p class="p-0 m-0">jAVED sHIM <br>
+                                                                    <span>lorem ipsum</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-12 text-center py-1 py-md-1">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                            </div>
+                                                            <div class="col-12 px-2 px-md-4 py-2 py-md-4">
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/left.png" alt="left"
+                                                                            class="img-fluid position-absolute bottom-50">
+                                                                    </div>
+                                                                </div>
+                                                                <p class="text-center p-0 m-0 testimonial_read">Lorem
+                                                                    Ipsum
+                                                                    is simply dummy
+                                                                    text of the printing and typesetting industry.
+                                                                    1500s,
+                                                                    Ipsum is typesetting industry. </p>
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/right.png" alt="left"
+                                                                            class="img-fluid position-absolute end-0 top-100">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 text-end">
+                                                                <br>
+                                                                <a href="#">READ MORE</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 ">
+                                                <div class="testimonial">
+                                                    <div class="">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/png/slider.png" alt="Slider"
+                                                                    class="img-fluid img_border ">
+                                                            </div>
+                                                            <div class="col-9 img_text">
+                                                                <p class="p-0 m-0">jAVED sHIM <br>
+                                                                    <span>lorem ipsum</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-12 text-center py-1 py-md-1">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                            </div>
+                                                            <div class="col-12 px-2 px-md-4 py-2 py-md-4">
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/left.png" alt="left"
+                                                                            class="img-fluid position-absolute bottom-50">
+                                                                    </div>
+                                                                </div>
+                                                                <p class="text-center p-0 m-0 testimonial_read">Lorem
+                                                                    Ipsum
+                                                                    is simply dummy
+                                                                    text of the printing and typesetting industry.
+                                                                    1500s,
+                                                                    Ipsum is typesetting industry. </p>
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/right.png" alt="left"
+                                                                            class="img-fluid position-absolute end-0 top-100">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 text-end">
+                                                                <br>
+                                                                <a href="#">READ MORE</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                                                <div class=" testimonial">
+                                                    <div class="">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/png/slider.png" alt="Slider"
+                                                                    class="img-fluid img_border ">
+                                                            </div>
+                                                            <div class="col-9 img_text">
+                                                                <p class="p-0 m-0">jAVED sHIM <br>
+                                                                    <span>lorem ipsum</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-12 text-center py-1 py-md-1">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                            </div>
+                                                            <div class="col-12 px-2 px-md-4 py-2 py-md-4">
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/left.png" alt="left"
+                                                                            class="img-fluid position-absolute bottom-50">
+                                                                    </div>
+                                                                </div>
+                                                                <p class="text-center p-0 m-0 testimonial_read">Lorem
+                                                                    Ipsum
+                                                                    is simply dummy
+                                                                    text of the printing and typesetting industry.
+                                                                    1500s,
+                                                                    Ipsum is typesetting industry. </p>
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/right.png" alt="left"
+                                                                            class="img-fluid position-absolute end-0 top-100">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 text-end">
+                                                                <br>
+                                                                <a href="#">READ MORE</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                                                <div class="testimonial">
+                                                    <div class="">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/png/slider.png" alt="Slider"
+                                                                    class="img-fluid img_border ">
+                                                            </div>
+                                                            <div class="col-9 img_text">
+                                                                <p class="p-0 m-0">jAVED sHIM <br>
+                                                                    <span>lorem ipsum</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-12 text-center py-1 py-md-1">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                            </div>
+                                                            <div class="col-12 px-2 px-md-4 py-2 py-md-4">
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/left.png" alt="left"
+                                                                            class="img-fluid position-absolute bottom-50">
+                                                                    </div>
+                                                                </div>
+                                                                <p class="text-center p-0 m-0 testimonial_read">Lorem
+                                                                    Ipsum
+                                                                    is simply dummy
+                                                                    text of the printing and typesetting industry.
+                                                                    1500s,
+                                                                    Ipsum is typesetting industry. </p>
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/right.png" alt="left"
+                                                                            class="img-fluid position-absolute end-0 top-100">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 text-end">
+                                                                <br>
+                                                                <a href="#">READ MORE</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 ">
+                                                <div class=" testimonial">
+                                                    <div class="">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/png/slider.png" alt="Slider"
+                                                                    class="img-fluid img_border ">
+                                                            </div>
+                                                            <div class="col-9 img_text">
+                                                                <p class="p-0 m-0">jAVED sHIM <br>
+                                                                    <span>lorem ipsum</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-12 text-center py-1 py-md-1">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                            </div>
+                                                            <div class="col-12 px-2 px-md-4 py-2 py-md-4">
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/left.png" alt="left"
+                                                                            class="img-fluid position-absolute bottom-50">
+                                                                    </div>
+                                                                </div>
+                                                                <p class="text-center p-0 m-0 testimonial_read">Lorem
+                                                                    Ipsum
+                                                                    is simply dummy
+                                                                    text of the printing and typesetting industry.
+                                                                    1500s,
+                                                                    Ipsum is typesetting industry. </p>
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/right.png" alt="left"
+                                                                            class="img-fluid position-absolute end-0 top-100">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 text-end">
+                                                                <br>
+                                                                <a href="#">READ MORE</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                                                <div class=" testimonial">
+                                                    <div class="">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/png/slider.png" alt="Slider"
+                                                                    class="img-fluid img_border ">
+                                                            </div>
+                                                            <div class="col-9 img_text">
+                                                                <p class="p-0 m-0">jAVED sHIM <br>
+                                                                    <span>lorem ipsum</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-12 text-center py-1 py-md-1">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                            </div>
+                                                            <div class="col-12 px-2 px-md-4 py-2 py-md-4">
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/left.png" alt="left"
+                                                                            class="img-fluid position-absolute bottom-50">
+                                                                    </div>
+                                                                </div>
+                                                                <p class="text-center p-0 m-0 testimonial_read">Lorem
+                                                                    Ipsum
+                                                                    is simply dummy
+                                                                    text of the printing and typesetting industry.
+                                                                    1500s,
+                                                                    Ipsum is typesetting industry. </p>
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/right.png" alt="left"
+                                                                            class="img-fluid position-absolute end-0 top-100">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 text-end">
+                                                                <br>
+                                                                <a href="#">READ MORE</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                                                <div class=" testimonial">
+                                                    <div class="">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/png/slider.png" alt="Slider"
+                                                                    class="img-fluid img_border ">
+                                                            </div>
+                                                            <div class="col-9 img_text">
+                                                                <p class="p-0 m-0">jAVED sHIM <br>
+                                                                    <span>lorem ipsum</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-12 text-center py-1 py-md-1">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                            </div>
+                                                            <div class="col-12 px-2 px-md-4 py-2 py-md-4">
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/left.png" alt="left"
+                                                                            class="img-fluid position-absolute bottom-50">
+                                                                    </div>
+                                                                </div>
+                                                                <p class="text-center p-0 m-0 testimonial_read">Lorem
+                                                                    Ipsum
+                                                                    is simply dummy
+                                                                    text of the printing and typesetting industry.
+                                                                    1500s,
+                                                                    Ipsum is typesetting industry. </p>
+                                                                <div class="row">
+                                                                    <div class="col-12 p-0 position-relative">
+                                                                        <img src="assets/Icon/right.png" alt="left"
+                                                                            class="img-fluid position-absolute end-0 top-100">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 text-end">
+                                                                <br>
+                                                                <a href="#">READ MORE</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 6Sx Scroll Section End html -->
+
+    <!-- 7ft Scroll Section Start hmtl  -->
+    <div class="container-fluid py-0 py-md-5">
+        <div class="row my-2 py-2 my-md-5 py-md-5">
+            <div class="col-12">
+                <div class="container question_section">
+                    <div class="row d-flex align-item-center">
+                        <div class="col-12 col-lg-6 d-flex align-items-center ">
+                            <div>
+                                <p class="m-0">Learn More</p>
+                                <img src="assets/Icon/line.png" alt="line" class="img-fluid">
+                                <h1>See it <br>
+                                    to believe it!</h1>
+                                <button type="button" class="btn">Request a demo</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h4 class="mb-4">What you can expect during the demo:</h4>
+                            <ul>
+                                <li>How we will transform your every individual employee into HumanFirewall</li>
+                                <li>Have a 360° Birds view of every individual performance</li>
+                                <li>How we enable Man+Machine unique combination to protect you not just automatedly but
+                                    automagically </li>
+                                <li>To demonstrate with a phishing simulation the capability of the advanced threat
+                                    intel </li>
+                                <li>To demonstrate Remediation under just a click to the infrastructure level
+                                </li>
+                                <li>And to have a discussion session to answer your queries</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 7th Scroll Section End html  -->
+
+    <!-- 8th Scroll Section Start html  -->
+    <div class="container-fluid Subscribe_box py-3 py-md-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-12 col-lg-7">
+                            <h2>Subscribe to stay Updated</h2>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your Email address..."
+                                    aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                                <button class="btn  border-rad" type="button" id="button-addon2">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 8th Scroll Section End html  -->
+
+    <!-- Footer section  Start  html  -->
+    <div class="container py-5 footer">
+        <div class="row py-0 ">
+            <div class="col-12 col-md-6 col-lg-4 footer_centent">
+                <img src="assets/png/HumanFirewall_logo.png" alt="HumanFirewall" class="img-fluid mb-5"
+                    style="height: 40px;"> <br>
+                <img src="assets/png/Member_logo.png" alt="Member_logo" class="img-fluid mb-4" style="height: 40px;">
+                <br>
+                <div class="row">
+                    <div class="col-12 col-md-9 col-lg-7 mb-2">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. the printing
+                            1500s, </p>
+                    </div>
+                </div>
+                <div>
+                    <h4>Follow Us</h4>
+                    <div class="footer_social_media">
+                        <i class="fa fa-linkedin-square me-2 " aria-hidden="true"></i>
+                        <i class="fa fa-twitter-square me-2" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-square me-2" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <h4>About Us</h4>
+                <div>
+                    <a href="#">Why HumanFirewall?</a> <br> <br>
+                    <a href="#">Partners </a> <br> <br>
+                    <a href="#"> About Us </a><br> <br>
+                    <a href="#">FAQs </a><br> <br>
+                    <a href="#">Team </a><br> <br>
+                    <a href="#">Careers </a><br> <br>
+                    <a href="#">Trust Center</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <h4>By Industry</h4>
+                <div>
+                    <a href="#">Automotive </a> <br> <br>
+                    <a href="#"> Constructions</a> <br> <br>
+                    <a href="#"> Finance </a><br> <br>
+                    <a href="#">Healthcare</a><br> <br>
+                    <a href="#">Manufacturing </a><br> <br>
+                    <a href="#"> Energy </a><br> <br>
+                    <a href="#">Government</a> <br><br>
+                    <a href="#">Retail </a><br> <br>
+                    <a href="#">Education</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+                <h4>Resources</h4>
+                <div>
+                    <a href="#">All Resources</a> <br> <br>
+                    <a href="#"> Blog </a> <br> <br>
+                    <a href="#"> Case Studies</a><br> <br>
+                    <a href="#"> Infographic </a><br> <br>
+                    <a href="#"> Videos </a><br> <br>
+                    <a href="#"> White Papers </a><br> <br>
+                    <a href="#">Newsroom</a>
+                </div>
+            </div>
+            <div class="col-12 address my-3 my-md-5">
+                <div class="row">
+
+                    <div class="col-12 col-md-6 col-lg-3 border-end border-white">
+                        <p>UK - London +44 207 993 0067 <br>
+                            <span>Unit 206, Comms House, Chiswick High
+                                Road, London W4 4HH, United Kingdom.</span>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 border-end border-white">
+                        <p>Singapore <br>
+                            <span>
+                                1003 Bukit Merah Central, #07-04 Inno
+                                Centre, Singapore 159836</span>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 border-end border-white">
+                        <p>IN - Gurugram <br>
+                            <span>
+                                JLLOYDS House, 238-A, Udyog Vihar Phase 4, Gurugram, India 122016</span>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 ">
+                        <p>IN - Mumbai <br>
+                            <span>
+                                C-320, Eastern Business District, LBS Marg, Mumbai, India 400078</span>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 border-start border-white">
+                        <p>UAE - Dubai +971 50 936 2788 <br>
+                            <span>Astrolabs Dubai, Cluster R, Jumeirah Lakes
+                                Towers, Dubai, United Arab Emirates.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 border-top mb-3"></div>
+            <div class="col-12 col-md-8 copyright">
+                <p>©2023 HumanFirewall
+                    Designed by Sheeshpal Kotwal</p>
+            </div>
+            <div class="col-12 col-md-2 text-center">
+                <a href="#">Privacy Policy </a>
+            </div>
+            <div class="col-12 col-md-2 text-end">
+                <a href="#">Terms & Conditions
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End html  -->
+
+    <!--Bootstrap Javascript File -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Other Javascript Cdn Link -->
+ <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script> 
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Custom Javascript File  -->
+    <script src="/Js/script.js"></script>
+    <script src="/js/1.js"></Script>
+    <!-- <script>  var s = skrollr.init();</script> -->
+
+
+</body>
+
+</html>
