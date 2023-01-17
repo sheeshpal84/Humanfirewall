@@ -136,40 +136,40 @@ $(document).ready(function () {
 
    /* background animation circle bvambient.js */
 
-//    document.addEventListener("DOMContentLoaded", function() {
-//     var demo1 = new BVAmbient({
-//       selector: "#ambient",
-//       fps: 60,
-//       max_transition_speed: 12000,
-//       min_transition_speed: 8000,
-//       particle_number: 3,
-//       particle_maxwidth: 300,
-//       particle_minwidth: 150,
-//       particle_radius: 50,
-//       particle_opacity: true,
-//       particle_colision_change: true,
-//       particle_background: "",
-//       refresh_onfocus: true,
-//       particle_image: {
-//         image: true,
-//         src: "/assets/png/circle_bg.png"
-//       },
-//       responsive: [
-//           {
-//             breakpoint: 768,
-//             settings: {
-//               particle_number: "2"
-//             }
-//           },
-//           {
-//             breakpoint: 480,
-//             settings: {
-//               particle_number: "1"
-//             }
-//           }
-//       ]
-//     });
-// });
+   document.addEventListener("DOMContentLoaded", function() {
+    var demo1 = new BVAmbient({
+      selector: "#ambient",
+      fps: 60,
+      max_transition_speed: 12000,
+      min_transition_speed: 8000,
+      particle_number: 3,
+      particle_maxwidth: 300,
+      particle_minwidth: 150,
+      particle_radius: 50,
+      particle_opacity: true,
+      particle_colision_change: true,
+      particle_background: "",
+      refresh_onfocus: true,
+      particle_image: {
+        image: true,
+        src: "/assets/png/circle_bg.png"
+      },
+      responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              particle_number: "2"
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              particle_number: "1"
+            }
+          }
+      ]
+    });
+});
 
   /* background animation circle bvambient.js */
   
