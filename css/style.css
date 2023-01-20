@@ -1012,3 +1012,35 @@ color: var(--sec-color);
 }
 
 /* Footer Section Css End  */
+
+
+/* Request Page Design  Start */
+.request {
+  margin-top: 60px;
+}
+
+.form_bg {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+.form_bg::before {    
+  content: ".";
+  background-image: url('../assets/png/demo.png');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.10;
+}
+.request_demo {
+  background-color: var(--section-color);
+  padding: 70px;
+}
+
+/* Request Page Design End  */
