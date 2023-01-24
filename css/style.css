@@ -161,7 +161,7 @@ p {
   color: var(--main-color);
 }
 
-.hero_content button {
+.hero_content a {
   padding: 10px 20px;
   background: var(--main-color);
   border: 1px solid var(--main-color);
@@ -172,7 +172,7 @@ p {
   color: var(--sec-color);
 }
 
-.hero_content button:hover {
+.hero_content a:hover {
   color: var(--sec-color);
 }
 
@@ -1023,24 +1023,63 @@ color: var(--sec-color);
   position: relative; 
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0px;
-  padding: 0px;
 }
 .form_bg::before {    
   content: ".";
-  background-image: url('../assets/png/demo.png');
+  background-image: url('https://www.qub.ac.uk/sites/ECIT/media/Media,951687,smxx-2000x1173.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.10;
+  opacity: 0.20;
 }
+.form_bg h1 {
+  color: #fff;
+}
+
+.form_bg p {
+  color: var(--sec-color);
+  inline-size: 600px;
+}
+
+.form_bg h6 {
+  color: var(--main-color);
+  margin: 0px;
+}
+
 .request_demo {
   background-color: var(--section-color);
   padding: 70px;
+  display: flex;
+  margin: 50px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.request_demo .form-control {
+margin: 5px 0px;
+}
+
+.request_demo button {
+  background-color: var(--main-color);
+  padding: 10px 30px;
+  border: none;
+  color: var(--sec-color);
+}
+
+.request_demo button:hover {
+color: var(--sec-color);
+}
+
+.iti {
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
 /* Request Page Design End  */
