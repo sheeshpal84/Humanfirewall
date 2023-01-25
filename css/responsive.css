@@ -250,6 +250,14 @@ h1 {
     font-size: 14px;
 }
 
+.trd_scroll img {
+    display: none;
+}
+
+.trd_scroll .title_trd {
+    margin-left: 0px;
+}
+
   }
   
 
