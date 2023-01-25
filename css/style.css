@@ -4,6 +4,7 @@ body {
   background-color: var(--main-bg-color) !important;
 }
 
+
 * {
   margin: 0px;
   padding: 0px;
@@ -370,7 +371,7 @@ p {
 }
 
 .sk::before {
-  content: '.';
+  content: '';
   background: url('../assets/png/beforeImg.png') no-repeat center center/cover;
   position: absolute;
   opacity: 1;
@@ -382,7 +383,7 @@ p {
 }
 
 .sk::after {
-  content: '.';
+  content: '';
   background: url('../assets/png/afterImg.png') no-repeat center center/cover;
   position: absolute;
   opacity: 1;
@@ -692,6 +693,25 @@ color: var(--sec-color);
   color: var(--main-color);
 }
 
+.mobile span {
+  color: var(--main-color);
+}
+
+.mobile .accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #ffe5e7;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.mobile .accordion-button:focus {
+ 
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
+}
+
+.mobile .accordion-body {
+  padding: 0.5rem 0.5rem;
+}
+
 /* 4 Scroll Css End  */
 
 
@@ -836,7 +856,6 @@ color: var(--sec-color);
 .question_section h1 {
   color: var(--sec-color);
   font-weight: 700;
-  line-height: 90px;
   padding: 25px 0px;
 }
 
@@ -991,7 +1010,7 @@ color: var(--sec-color);
 
 .address {
   background: var(--navigation-color);
-  padding: 10px;
+  padding: 5px;
   color: var(--sec-color);
 }
 
@@ -1083,3 +1102,6 @@ color: var(--sec-color);
 }
 
 /* Request Page Design End  */
+
+
+
