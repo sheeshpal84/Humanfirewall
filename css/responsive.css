@@ -355,6 +355,11 @@ h1 {
     font-size: 14px;
 }
 
+.footer h4 {
+    text-align: center;
+}
+
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -389,6 +394,9 @@ h1 {
     }
     .sk::after {
       display: none;
+    }
+    .question_section h4 {
+        margin-top: 40px;
     }
  }
 
