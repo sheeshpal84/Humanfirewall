@@ -130,9 +130,7 @@ h1 {
     font-size: 16px;
 }
 
-.footer h4 {
-    text-align: center;
-}
+
 
 .trd_scroll img {
     display: none;
@@ -173,7 +171,7 @@ h1 {
     
     
 h1 {
-    font-size: 32px !important;
+    font-size: 45px !important;
   }
   
   h2 {
@@ -194,6 +192,10 @@ h1 {
 
 .hero_content p span {
     width: 24px;
+  }
+
+  .hero_content h1 {
+    overflow: hidden;
   }
 
   .hero_content p {
@@ -258,9 +260,7 @@ h1 {
     margin-left: 0px;
 }
 
-.footer h4 {
-    text-align: center;
-}
+
 
 
   }
