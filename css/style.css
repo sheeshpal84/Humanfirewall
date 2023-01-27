@@ -53,6 +53,15 @@ p {
   --sec-color: #ffffff;
   --third-color: #545454;
   --left-right-padding: 194px;
+  --gray-section: #F8F9FA;
+  --text-black: #000000;
+}
+
+.white-section {
+  background-color: var(--section-color);
+}
+.section-gray {
+background-color: var(--gray-section);
 }
 
 /* Navigation Css Strat  */
@@ -368,6 +377,7 @@ p {
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
+  background-color: var(--section-color);
 }
 
 .sk::before {
@@ -429,7 +439,7 @@ p {
 
 /* 2 Scroll Css Start  */
 .sec_scroll h2 {
-  color: var(--sec-color);
+  color: var(--text-black);
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -522,7 +532,7 @@ color: var(--sec-color);
 /* 3 Scroll Css Start */
 
 .trd_scroll h3 {
-  color: var(--sec-color);
+  color: var(--text-black);
   text-align: center;
   text-decoration-color: var(--main-color);
   text-decoration: underline;
@@ -536,9 +546,10 @@ color: var(--sec-color);
 }
 
 .trd_scroll .card {
-  background: var(--navigation-color);
+  background: var(--section-color);
   border: 1px solid #FFFFFF;
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 
 .trd_scroll img {
@@ -557,7 +568,7 @@ color: var(--sec-color);
   padding: 0px 10px;
   width: auto;
   position: absolute;
-  background: linear-gradient(180deg, rgba(9, 9, 9, 1) 50%, rgba(24, 24, 24, 1) 50%);
+  background: linear-gradient(180deg, rgb(248 249 250) 50%, rgb(255 255 255) 50%);
 }
 
 .trd_scroll .title_trd {
@@ -569,7 +580,7 @@ color: var(--sec-color);
   width: auto;
   margin-left: 90px;
   position: absolute;
-  background: linear-gradient(180deg, rgba(9, 9, 9, 1) 50%, rgba(24, 24, 24, 1) 50%);
+  background: linear-gradient(180deg, rgb(248 249 250) 50%, rgb(255 255 255) 50%);
 }
 
 /* .trd_scroll h5::before {
@@ -583,7 +594,7 @@ color: var(--sec-color);
 } */
 
 .trd_scroll p {
-  color: var(--sec-color);
+  color: var(--text-black);
   font-style: normal;
   padding: 10px 0px 5px 0px;
   font-size: 16px;
@@ -593,9 +604,7 @@ color: var(--sec-color);
 
 
 /* 4 Scroll Css Start  */
-.frt {
-  background-color: var(--section-color);
-}
+
 
 .centent_heading h4 {
   font-style: normal;
@@ -639,27 +648,29 @@ color: var(--sec-color);
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-  color: #fff;
+  color: #fff !important;
   background-color: var(--main-bg-color) !important;
-  border: 4px solid var(--main-color) !important;
 }
 
 .nav-pills .nav-link {
-  background: var(--main-bg-color) !important;
+  background: var(--gray-section) !important;
   border-radius: 10px;
-  color: var(--sec-color) !important;
-  border: 4px solid var(--main-bg-color) !important;
+  color: var(--text-black) !important;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
 }
 
 .left_centent_box {
-  color: var(--sec-color);
+  color: var(--text-black );
   padding: 5px 0px 15px 100px;
+  
 }
 
 .left_centent_sub {
-  background: var(--main-bg-color);
+  background:var(--gray-section);
   border-radius: 20px;
   padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .left_centent_box h6 {
@@ -693,6 +704,8 @@ color: var(--sec-color);
   color: var(--main-color);
 }
 
+
+
 .mobile span {
   color: var(--main-color);
 }
@@ -714,25 +727,42 @@ color: var(--sec-color);
 
 /* 4 Scroll Css End  */
 
+/* new section add css start  */
+.logo_sub .card {
+  padding: 60px;
+  border: none;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  transition: transform .5s ease;
+}
+
+.logo_sub .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  transform: scale(1.03);
+}
+
+/* new section add css end  */
 
 /* 5 Scroll Css start  */
 
 .blog_centent h2 {
   text-align: center;
-  color: var(--sec-color);
+  color: var(--text-black);
   font-style: normal;
   font-weight: 700;
   line-height: 55px;
   text-decoration: underline;
   text-underline-offset: 20px;
-  text-decoration-color: var(--sec-color);
+  text-decoration-color: var(--text-black);
   text-decoration-thickness: 3px;
   padding: 0px 0px 50px 0px;
 }
 
 .blog_section .card {
-  background: var(--navigation-color);
-  box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.25);
+  background: var(--gray-section);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 50px;
   border-radius: 10px;
   padding: 30px;
 }
@@ -751,15 +781,19 @@ color: var(--sec-color);
   left: 14px;
 }
 
+.blog_section .card {
+  border: none;
+}
+
 .blog_section h4 {
-  color: var(--sec-color);
+  color: var(--text-black);
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
 }
 
 .blog_section p {
-  color: var(--sec-color);
+  color: var(--text-black);
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -769,7 +803,7 @@ color: var(--sec-color);
 
 /* 6 Scroll Css start  */
 .testimonial_section {
-  background-color: var(--section-color);
+  background-color: var(--gray-section);
 }
 
 .testimonial_heading h2 {
@@ -843,18 +877,19 @@ color: var(--sec-color);
 
 /* 7 Scroll Css Start  */
 .question_section {
-  background: var(--navigation-color);
+  background: var(--gray-section);
   border-radius: 25px;
   padding: 100px 100px 80px 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .question_section p {
-  color: var(--sec-color);
+  color: var(--text-black);
   font-weight: 700;
 }
 
 .question_section h1 {
-  color: var(--sec-color);
+  color: var(--text-black);
   font-weight: 700;
   padding: 25px 0px;
 }
@@ -872,14 +907,14 @@ color: var(--sec-color);
 }
 
 .question_section h4 {
-  color: var(--sec-color);
+  color: var(--text-black);
   font-family: 'Jost', sans-serif;
   font-weight: 700;
 }
 
 .question_section ul li {
   font-size: 16px;
-  color: var(--sec-color);
+  color: var(--text-black);
   font-family: 'Jost', sans-serif !important;
   font-style: normal;
   font-weight: 400;
