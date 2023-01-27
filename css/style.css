@@ -657,7 +657,7 @@ color: var(--sec-color);
   border-radius: 10px;
   color: var(--text-black) !important;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-
+  margin-bottom: 10px;
 }
 
 .left_centent_box {
