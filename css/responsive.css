@@ -140,6 +140,10 @@ h1 {
     margin-left: 0px;
 }
 
+.footer .left-border {
+    border-right: 0px solid var(--section-color);
+  }
+
   }
 
 /*  Small devices (landscape phones, 576px and up) */
@@ -267,6 +271,10 @@ h1 {
 .left_centent_sub {
     padding: 15px;
 }
+
+.footer .left-border {
+    border-right: 0px solid var(--section-color);
+  }
 
   }
   
