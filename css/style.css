@@ -703,7 +703,17 @@ color: var(--sec-color);
   color: var(--main-color);
 }
 
+.mobile p {
+  color: var(--main-bg-color);
+}
 
+.mobile h6 {
+  color: var(--main-bg-color);
+}
+
+.mobile li {
+  color: var(--main-bg-color);
+}
 
 .mobile span {
   color: var(--main-color);
@@ -711,7 +721,7 @@ color: var(--sec-color);
 
 .mobile .accordion-button:not(.collapsed) {
   color: #000;
-  background-color: #ffe5e7;
+  background-color: var(--gray-section);
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
 }
 

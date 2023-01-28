@@ -85,7 +85,7 @@ h1 {
 }
 .sec_scroll h2 {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 .blog_centent h2 {
@@ -226,7 +226,7 @@ h1 {
 }
 .sec_scroll h2 {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 .blog_centent h2 {
@@ -260,8 +260,14 @@ h1 {
     display: none;
 }
 
+
+
 .trd_scroll .title_trd {
+    margin-top: 0px;
+    padding: 0px 10px;
     margin-left: 0px;
+    position: inherit;
+    background: linear-gradient(180deg, rgb(248 249 250) 0%, rgb(255 255 255) 0%);
 }
 
 .trd_scroll h3 {
@@ -276,6 +282,15 @@ h1 {
     border-right: 0px solid var(--section-color);
   }
 
+  .trd_scroll h5 {
+    margin-top: 0px;
+    position: inherit;
+    background: linear-gradient(180deg, rgb(248 249 250) 0%, rgb(255 255 255) 0%);
+}
+
+.trd_scroll p {
+    padding: 0px;
+}
   }
   
 
