@@ -5,6 +5,7 @@
 
 body {
   background-color: var(--main-bg-color) !important;
+  overflow-x: hidden;
 }
 
 
@@ -34,13 +35,13 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -160,13 +161,11 @@ background-color: var(--gray-section);
 
 .hero_content p {
   color: var(--sec-color);
-  text-transform: uppercase;
-  font-weight: 500;
 }
 
 .hero_content p span {
   color: var(--main-color);
-  width: 26px;
+  width: 30px;
   display: inline-block;
 }
 
@@ -360,14 +359,49 @@ background-color: var(--gray-section);
 /* BVAmbient Style */
 
 #ambient {
-  overflow-x: hidden !important;
+  overflow: hidden ;
+  position: relative;
 }
+
+#ambient1 {
+  overflow: hidden ;
+  position: relative;
+}
+
+#ambient3 {
+  overflow: hidden ;
+  position: relative;
+}
+
+#ambient4 {
+  overflow: hidden ;
+  position: relative;
+}
+
+#ambient5 {
+  overflow: hidden ;
+  position: relative;
+}
+
+#ambient6 {
+  overflow: hidden ;
+  position: relative;
+}
+
+#ambient7 {
+  overflow: hidden ;
+  position: relative;
+}
+
+
 
 .bvambient_particle {
   position: absolute;
   pointer-events: none;
   transition: top linear, left linear;
-  z-index: -1;
+  z-index: 1;
+ 
+  overflow: hidden;
 }
 
 /* Hero Section End Css  */

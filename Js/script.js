@@ -136,13 +136,16 @@ $(document).ready(function () {
 
    /* background animation circle bvambient.js */
 
-   document.addEventListener("DOMContentLoaded", function() {
+   let ids = ["#ambient", "#ambient1", "#ambient2", "#ambient3", "#ambient4", "#ambient5", "#ambient6", "#ambient7"]
+
+for(let i = 0; i < ids.length; i++){
+  document.addEventListener("DOMContentLoaded", function() {
     var demo1 = new BVAmbient({
-      selector: "#ambient",
+      selector: `${ids[i]}`,
       fps: 60,
       max_transition_speed: 12000,
       min_transition_speed: 8000,
-      particle_number: 3,
+      particle_number: 2,
       particle_maxwidth: 300,
       particle_minwidth: 150,
       particle_radius: 50,
@@ -171,6 +174,10 @@ $(document).ready(function () {
     });
 });
 
+}
+
+
+  
 
 
   /* background animation circle bvambient.js */
