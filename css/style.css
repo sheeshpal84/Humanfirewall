@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap'); */
+
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
@@ -392,7 +392,7 @@ background-color: var(--gray-section);
   left: 0px;
   right: 1000px;
   bottom: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sk::after {
@@ -404,7 +404,7 @@ background-color: var(--gray-section);
   right: 0px;
   left: 830px;
   bottom: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .bg-wihte {
