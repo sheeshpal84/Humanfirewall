@@ -155,7 +155,7 @@ for(let i = 0; i < ids.length; i++){
       refresh_onfocus: true,
       particle_image: {
         image: true,
-        src: "/assets/png/circle_bg.png"
+        src: "assets/png/circle_bg.png"
       },
       responsive: [
           {
