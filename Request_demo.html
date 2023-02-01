@@ -26,8 +26,8 @@
 
 <body id="ambient">
 
-    <!-- navigation Start html  -->
-    <div class="container-fluid Navgition fixed-top ">
+     <!-- navigation Start html  -->
+     <div class="container-fluid Navgition fixed-top " >
         <div class="row ">
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-nav">
@@ -42,36 +42,19 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto ">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="aboutUs.html">About</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Services
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Pages
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Why_HumanFirewall.html">Why HumanFirewall?</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
+                                    <a class="nav-link " href="ContactUs.html">Contact Us</a>
                                 </li>
+
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -86,72 +69,10 @@
 
                             </ul>
                             <div id="nav_button">
-                                <button type="button" class="btn nav_btn ">Log In</button>
-                                <button type="button" class="btn nav_btn " data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">Sign Up</button>
-                                <!-- Modal -->
-                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                    aria-hidden="true">
-                                    <div class=" modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form class="row g-3">
-                                                    <div class="col-md-6">
-                                                        <label for="inputEmail4" class="form-label">Email</label>
-                                                        <input type="email" class="form-control" id="inputEmail4">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="inputPassword4" class="form-label">Password</label>
-                                                        <input type="password" class="form-control" id="inputPassword4">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label for="inputAddress" class="form-label">Address</label>
-                                                        <input type="text" class="form-control" id="inputAddress"
-                                                            placeholder="1234 Main St">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label for="inputAddress2" class="form-label">Address 2</label>
-                                                        <input type="text" class="form-control" id="inputAddress2"
-                                                            placeholder="Apartment, studio, or floor">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="inputCity" class="form-label">City</label>
-                                                        <input type="text" class="form-control" id="inputCity">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="inputState" class="form-label">State</label>
-                                                        <select id="inputState" class="form-select">
-                                                            <option selected>Choose...</option>
-                                                            <option>...</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <label for="inputZip" class="form-label">Zip</label>
-                                                        <input type="text" class="form-control" id="inputZip">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="gridCheck">
-                                                            <label class="form-check-label" for="gridCheck">
-                                                                Check me out
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button type="submit" class="btn btn-primary">Sign Up</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a href="https://app.humanfirewall.io/login" class="btn nav_btn" role="button"
+                                    aria-disabled="true">Log In </a>
+                                <a href="https://app.humanfirewall.io/register" class="btn nav_btn" role="button"
+                                    aria-disabled="true">Free Trial</a>
                             </div>
                         </div>
                     </div>

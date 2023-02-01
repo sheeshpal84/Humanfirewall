@@ -635,6 +635,7 @@ color: var(--sec-color);
   font-style: normal;
   padding: 10px 0px 5px 0px;
   font-size: 16px;
+  text-align: left;
 }
 
 /* 3 Scroll Css End  */
@@ -1261,6 +1262,124 @@ color: var(--sec-color);
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
 }
+.ContactUs h6 {
+  color: var(--main-color);
+}
+
+.ContactUs p {
+  font-size: 16px;
+  padding-bottom: 0px;
+  font-weight: 500;
+}
+
+.ContactUs p span {
+font-size: 12px;
+font-weight: normal;
+}
+
 /* 1 Section end  */
 
 /* Contact Us Section Css End  */
+
+
+
+/* Why Humanfirewall Section Css Start  */
+
+/* Section 1 Css  */
+
+
+
+.why  h2 span {
+  color: var(--main-color);
+}
+
+.why  p {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.boxs {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+  background-color: var(--sec-color);
+  transition: transform .5s ease;
+  
+}
+
+.boxs:hover {
+  transform: scale(1.03);
+  transition: transform .5s ease;
+}
+.boxs h5 {
+  text-transform:none;
+}
+
+.boxs p{
+  text-transform: none;
+}
+
+.boxs1 {
+  padding: 20px;
+  background-color: var(--sec-color);
+  transition: all 0.5s ease;
+  border: 1px solid var(--sec-color);
+
+}
+
+.boxs1:hover {
+  border: 1px solid var(--main-color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.boxs1 h4 {
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.boxs1 p {
+  margin-bottom: 0px;
+}
+
+
+
+
+
+.cyan {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.red {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.blue {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+.orange {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+/* Section 1 End  */
+
+/* section 2 Css  */
+.features .card {
+  background-color: var(--gray-section);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  transition: transform .1s ease;
+}
+
+.features .card:hover {
+  background-color: var(--sec-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: transform .1s ease-in-out;
+}
+
+.features h5 {
+  color: var(--main-color);
+}
+
+.features p {
+  font-size: 16px;
+}
+
+/* section 2 End  */
+
+/* Why Humanfirewall Section Css End  */
