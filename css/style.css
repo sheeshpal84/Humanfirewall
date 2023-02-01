@@ -38,16 +38,17 @@ h4 {
   font-size: 20px;
   font-weight: 400;
   font-family: 'IBM Plex Sans', sans-serif;
+  line-height: 1.5;
 }
+
+
+
 
 p {
   font-size: 18px;
+  line-height: 1.5;
   font-family: 'IBM Plex Sans', sans-serif;
 }
-
-
-
-
 
 :root {
   --navigation-color: #181818;
@@ -462,7 +463,6 @@ background-color: var(--gray-section);
 }
 
 .sec_section_content p {
-  font-weight: 500;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -1073,6 +1073,7 @@ color: var(--sec-color);
   color: var(--sec-color);
   text-decoration: none;
   font-size: 14px;
+  line-height: 2.5;
 }
 
 .footer a:hover {
@@ -1190,7 +1191,7 @@ color: var(--sec-color);
  /***** 1 Section *****/
  .about_section .card {
   border: 0px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  
  }
 
  .about_section .card h5 {
@@ -1205,9 +1206,47 @@ color: var(--main-color);
  /* 2 section end  */
 
 
+ /* progress bar  */
+
+ /* progress bar end  */
+
+
+
 /* about section css end  */
 
+.circle {
+  width: 150px;
+  margin: 6px 6px 20px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
 
+.circle canvas {
+  vertical-align: top;
+  width: 150px !important;
+}
+
+.circle strong {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 0px;
+  color: black;
+}
+
+.circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+.circle span {
+  display: block;
+  color: var(--main-bg-color);
+}
 /* Contact Us Section Css Start  */
  
 /* 1 section  */
@@ -1347,7 +1386,7 @@ font-weight: normal;
 .cyan {
   border-top: 3px solid hsl(180, 62%, 55%);
 }
-.red {
+.reds {
   border-top: 3px solid hsl(0, 78%, 62%);
 }
 .blue {
@@ -1383,3 +1422,17 @@ font-weight: normal;
 /* section 2 End  */
 
 /* Why Humanfirewall Section Css End  */
+
+
+/* Resources Section Css Start   */
+
+.resources .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff !important;
+  background-color: var(--main-bg-color) !important;
+}
+
+.resources .nav-pills .nav-link {
+  margin: 0px 20px;
+}
+
+/* Resources Section Css End  */
