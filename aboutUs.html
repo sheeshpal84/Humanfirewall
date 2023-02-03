@@ -22,11 +22,9 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/responsive.css">
 
+   
     <title>HumanFirewall</title>
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 </head>
 
@@ -83,14 +81,11 @@
     <div class="container py-5 py-sm-0 section" style="margin-top: 80px;" >
         <div class="row px-3 px-sm-0 py-md-0 my-0 my-xl-5 d-flex align-items-center">
             <div class="col-12 col-md-7 my-lg-0 my-xl-5 py-lg-4 hero_content">
-                <h1>We're Not Just Changing The Game.
+                <h1>Human Defence Reinforced for 
+
                      <br>
-                    <span style="text-transform:initial">    We're the New Game! </span>
+                    <span style="text-transform:initial">  Cybersecurity </span>
                 </h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ipsam nihil ab unde, voluptates fuga, qui non corporis accusantium esse neque recusandae! Consequatur, unde? </p>
-
-                
-
                 
 
             </div>
@@ -237,64 +232,50 @@
     <div class="container-fluid white-section py-5 py-sm-0">
         <div class="row py-0 py-sm-5">
             <div class="col-12 py-0 py-sm-5">
-                <div class="container">
-                    <div class="row text-center d-flex justify-content-around">
-                        <div class="col-12 col-sm-2 col-lg-2">
-                            <div class="progressbar">
-                            <div class="second circle" data-percent="77">
-                              <strong></strong>
-
-                             
-                                <span class="count_center"> 2018 </span> <span> Founded</span>
+                <div class="three_box1">
+                    <div class="container">
+                       <div class="row">
+                          <div class="col-md-3">
+                             <div id="text_hover" class="const1 text-center">
+                                <i><img src="assets/Icon/ser2.png" alt="#"/></i>
+                                <span>   2018 <br>
+                                    Founded
+                                  
+                                    </span>
+                             </div>
+                          </div>
+                          <div class="col-md-3">
+                             <div id="text_hover" class="const1 text-center">
+                                <i><img src="assets/Icon/ser3.png" alt="#"/></i>
+                                <span>500+ <br>
+                                    Empowered Organisations
+                                    </span>
+                             </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div id="text_hover" class="const1 text-center">
+                               <i><img src="assets/Icon/ser1.png" alt="#"/></i>
+                               <span>
+                                99% <br>
+                                Client Retention Rate
+                               
+                                </span>
                             </div>
+                         </div>
+                         <div class="col-md-3">
+                            <div id="text_hover" class="const1 text-center">
+                               <i><img src="assets/Icon/ser1.png" alt="#"/></i>
+                               <span> 142
+                                 <br>
+                                
+                                Countries Served
+                                
+                                </span>
                             </div>
-                        </div>
-                        
-                        <div class="col-12 col-sm-2 col-lg-2">
-                            <div class="progressbar">
-                            <div class="second circle" data-percent="89">
-                              <strong></strong>
-                              
-                                <span class="count_center"> 500+ </span>  <span> Empowered Organisations</span>
-                            </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 col-sm-2 col-lg-2">
-                            <div class="progressbar">
-                            <div class="second circle" data-percent="75">
-                              <strong></strong>
-                              <span class="count_center"> 3+ Million </span>  <span> Empowered Employees</span>
-                              
-
-
-                            </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 col-sm-2 col-lg-2">
-                            <div class="progressbar">
-                            <div class="second circle" data-percent="88">
-                              <strong></strong>
-                              <span class="count_center"> 99% </span>  <span> Client Retention Rate</span>
-                            
-                             
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-2 col-lg-2">
-                            <div class="progressbar">
-                            <div class="second circle" data-percent="87">
-                              <strong></strong>
-                              <span class="count_center"> 142</span> <span> Countries Served</span>
-                              
-                            </div>
-                            </div>
-                        </div>
-                
-                    
+                         </div>
+                       </div>
                     </div>
-                </div>
+                 </div>
             </div>
         </div>
     </div>
@@ -967,7 +948,7 @@
             </div>
         </div>
         <div class="col-12 address my-3 my-md-5">
-            <div class="row">
+            <div class="row p-1">
 
                 <div class="col-12 col-md-6 col-lg-3 left-border">
                     <p>UK - London +44 207 993 0067 <br>
@@ -1032,35 +1013,7 @@
     <script src="Js/script.js"></script>
 
 
-    <script>
-        $(document).ready(function ($) {
-    function animateElements() {
-        $('.progressbar').each(function () {
-            var elementPos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            var percent = $(this).find('.circle').attr('data-percent');
-            var animate = $(this).data('animate');
-            if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
-                $(this).data('animate', true);
-                $(this).find('.circle').circleProgress({
-                    // startAngle: -Math.PI / 2,
-                    value: percent / 100,
-                    size : 180,
-                    thickness: 30,
-                    fill: {
-                        color: '#cc0000'
-                    }
-                }).on('circle-animation-progress', function (event, progress, stepValue) {
-                    $(this).find('strong').text((stepValue*100).toFixed(0) + "");
-                }).stop();
-            }
-        });
-    }
-
-    animateElements();
-    $(window).scroll(animateElements);
-});
-    </script>
+   
 
 </body>
 </html>

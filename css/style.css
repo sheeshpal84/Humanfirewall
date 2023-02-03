@@ -1075,7 +1075,7 @@ position: absolute;
 .footer a {
   color: var(--sec-color);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2.5;
 }
 
@@ -1214,6 +1214,12 @@ padding: 5px 15px 15px 15px;
 }
 
 
+.address_card {
+  background-color: var(--section-color);
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
 
 /***** 1 End Section *****/
 
@@ -1227,6 +1233,36 @@ padding: 5px 15px 15px 15px;
 .carousel-indicators {
   bottom: -40px !important;
 }
+
+
+/* three_box */
+
+
+
+.const1 {
+  padding: 40px 10px 25px 10px;
+  background: #fff;
+  box-shadow: 0 0 250px rgba(3, 3, 3, 0.16);
+  transition: ease-in all 0.5s;
+}
+
+.const1 span {
+  transition: ease-in all 0.5s;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  color: var(--main-bg-color);
+  padding-top: 35px;
+  line-height: 20px;
+}
+
+
+
+
+/* end three_box */
+
 
 /* progress bar  */
 
@@ -1326,6 +1362,39 @@ padding: 5px 15px 15px 15px;
 .about_card .card img {
   padding: 0px 80px;
 }
+
+
+/* CTA section start  */
+.ctn_section {
+  border-radius: 20px;
+  /* background: var(--gray-section); */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.ctn_section .card_cta {
+  
+  padding: 20px;
+}
+
+.ctn_section .card_cta a {
+
+    background-color: var(--main-color);
+    padding: 10px 30px;
+    border: none;
+    color: var(--sec-color);
+}
+
+.ctn_section .card_cta a:hover {
+  color: var(--sec-color);
+}
+
+
+.card_cta .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
+}
+/* CTA section End  */
+
 
 /* about section css end  */
 
