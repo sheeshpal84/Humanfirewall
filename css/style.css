@@ -685,12 +685,29 @@ position: absolute;
   font-size: 14px;
   margin: 0px;
 }
+.change1 {
+  visibility: hidden;
+}
+.change2 {
+  visibility: visible;
+}
 
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.nav-link.active .change1{
+visibility: visible;
+position:absolute;
+}
+.nav-link.active .change2{
+  visibility: hidden;
+  position: relative;
+  }
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link .change {
+ 
   color: #fff !important;
   background-color: var(--main-bg-color) !important;
 }
+
+
 
 .nav-pills .nav-link {
   background: var(--gray-section) !important;
