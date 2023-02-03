@@ -1144,6 +1144,7 @@ visibility: visible;
   background: var(--navigation-color);
   padding: 5px;
   color: var(--sec-color);
+  border-radius: 10px;
 }
 
 .address p {
@@ -1429,7 +1430,7 @@ padding: 5px 15px 15px 15px;
 
 .ctn_section .card_cta {
   
-  padding: 60px 20px;
+  padding: 20px 20px;
  
 }
 
