@@ -687,18 +687,19 @@ position: absolute;
 }
 .change1 {
   visibility: hidden;
+  padding: 5px 0px 5px 10px;
 }
 .change2 {
   visibility: visible;
+  padding: 5px 0px 5px 10px;
 }
 
 .nav-link.active .change1{
 visibility: visible;
-position:absolute;
 }
 .nav-link.active .change2{
   visibility: hidden;
-  position: relative;
+  position:absolute;
   }
 .nav-pills .nav-link.active, 
 .nav-pills .show>.nav-link .change {
@@ -715,6 +716,7 @@ position:absolute;
   color: var(--text-black) !important;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .left_centent_box {
@@ -1257,21 +1259,23 @@ padding: 5px 15px 15px 15px;
 
 
 .const1 {
-  padding: 40px 10px 25px 10px;
+  padding: 25px 10px 25px 10px;
   background: #fff;
   box-shadow: 0 0 250px rgba(3, 3, 3, 0.16);
   transition: ease-in all 0.5s;
+  width: 100%;
+}
+
+.const1 p {
+  font-weight: bold;
+  font-size: 26px;
 }
 
 .const1 span {
   transition: ease-in all 0.5s;
   display: block;
   font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
   color: var(--main-bg-color);
-  padding-top: 35px;
   line-height: 20px;
 }
 
@@ -1368,6 +1372,9 @@ padding: 5px 15px 15px 15px;
 .about_card .card {
   padding: 20px 0px;
   border: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .about_card .card:hover {
@@ -1379,7 +1386,6 @@ padding: 5px 15px 15px 15px;
 .about_card .card img {
   padding: 0px 80px;
 }
-
 
 /* CTA section start  */
 .ctn_section {
