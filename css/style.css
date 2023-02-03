@@ -142,6 +142,38 @@ p {
 
 
 /* Hero Section Start Css  */
+
+.speed1 {
+  position: absolute;
+  top: 182px;
+    left: -6px;
+}
+
+.bar_grf {
+  position: absolute;
+  top: 83px;
+    left: 54px;
+}
+
+.settings {
+  position: absolute;
+  right: 0px;
+    top: 60px;
+}
+
+.bar0 {
+  position:absolute;
+  top: 10px;
+  transform: rotate(90deg);
+  left: 180px;
+}
+
+.barcrl {
+  position:absolute;
+  top: 182px;
+  right: 0;
+}
+
 .hero_content h1 {
   color: var(--sec-color);
 }
