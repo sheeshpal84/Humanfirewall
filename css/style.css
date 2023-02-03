@@ -1259,7 +1259,7 @@ padding: 5px 15px 15px 15px;
 
 
 .const1 {
-  padding: 25px 10px 25px 10px;
+  padding: 40px 10px 25px 10px;
   background: #fff;
   box-shadow: 0 0 250px rgba(3, 3, 3, 0.16);
   transition: ease-in all 0.5s;
@@ -1390,13 +1390,14 @@ padding: 5px 15px 15px 15px;
 /* CTA section start  */
 .ctn_section {
   border-radius: 20px;
-  /* background: var(--gray-section); */
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: var(--gray-section);
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px;
 }
 
 .ctn_section .card_cta {
   
-  padding: 20px;
+  padding: 60px 20px;
+ 
 }
 
 .ctn_section .card_cta a {
