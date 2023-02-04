@@ -144,6 +144,9 @@ h1 {
     border-right: 0px solid var(--section-color);
   }
 
+  .mail_mobile {
+    color: #fff;
+}
 
 
   }
@@ -197,7 +200,7 @@ h1 {
   }
 
 .hero_content p span {
-    width: 24px;
+    width: 30px;
   }
 
   .hero_content h1 {
@@ -256,6 +259,7 @@ h1 {
 }
 .question_section p {
     font-size: 14px;
+
 }
 
 .trd_scroll img {
@@ -292,6 +296,14 @@ h1 {
 
 .trd_scroll p {
     padding: 0px;
+    text-align: center;
+}
+
+.mobile_screen_none {
+    display: none;
+}
+.mail_mobile {
+    color: #FFFFFF !important;
 }
   }
   
@@ -388,7 +400,13 @@ h1 {
 .footer h4 {
     text-align: center;
 }
+.mobile_screen_none {
+    display: none;
+}
 
+.mail_mobile {
+    color: #fff;
+}
 
 }
 
@@ -427,6 +445,9 @@ h1 {
     }
     .question_section h4 {
         margin-top: 40px;
+    }
+    .mobile_screen_none {
+        display: none;
     }
  }
 
