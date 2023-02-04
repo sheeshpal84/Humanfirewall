@@ -161,13 +161,13 @@ for(let i = 0; i < ids.length; i++){
           {
             breakpoint: 768,
             settings: {
-              particle_number: "2"
+              particle_number: "0"
             }
           },
           {
             breakpoint: 480,
             settings: {
-              particle_number: "1"
+              particle_number: "0"
             }
           }
       ]

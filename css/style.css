@@ -1409,16 +1409,20 @@ padding: 5px 15px 15px 15px;
   display: flex;
   align-items: center;
   width: 100%;
+  font-weight: bold;
 }
 
 .about_card .card:hover {
   transform: scale(1.03);
   transition: all .5s ease;
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  color: var(--main-color);
 }
+
 
 .about_card .card img {
   padding: 0px 80px;
+  height: 40px;
 }
 
 /* CTA section start  */
