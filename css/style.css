@@ -1338,8 +1338,8 @@ padding: 5px 15px 15px 15px;
 }
 
 .flip_card .front1 img{
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
 
 .flip_card  .content1 {
@@ -1422,7 +1422,7 @@ padding: 5px 15px 15px 15px;
 
 .about_card .card img {
   padding: 0px 80px;
-  height: 40px;
+  height: 60px;
 }
 
 /* CTA section start  */
