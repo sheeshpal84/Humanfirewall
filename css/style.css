@@ -21,26 +21,23 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 600;
   font-family: 'IBM Plex Sans', sans-serif !important;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
   font-family: 'IBM Plex Sans', sans-serif !important;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
   font-family: 'IBM Plex Sans', sans-serif !important;
   line-height: 1.5; 
 }
-
-
-
 
 p {
   font-size: 18px;
@@ -484,12 +481,12 @@ p {
   font-weight: 500;
 }
 
-.sec_section_content h1 {
+.sec_section_content h2 {
   font-weight: 700;
   padding: 40px 0px;
 }
 
-.sec_section_content h1 span {
+.sec_section_content h2 span {
   color: var(--main-color);
 }
 
@@ -506,7 +503,7 @@ p {
 /* 1st Scroll Css End  */
 
 /* 2 Scroll Css Start  */
-.sec_scroll h2 {
+.sec_scroll h3 {
   color: var(--text-black);
   font-weight: 500;
   text-transform: uppercase;
@@ -520,11 +517,11 @@ p {
   color: var(--main-color) !important;
 }
 
-.sec_scroll h2 span {
+.sec_scroll h3 span {
   color: var(--main-color);
 }
 
-.sec_scroll1 h2 {
+.sec_scroll1 h3 {
   color: var(--main-bg-color);
   font-weight: 500;
 }
@@ -547,7 +544,7 @@ p {
 }
 
 
-.sec_scroll1 h2 span {
+.sec_scroll1 h3 span {
   color: green;
 }
 
@@ -625,18 +622,27 @@ p {
 }
 
 .trd_scroll img {
+  position: absolute;
+  top: -34px;
+  z-index: 1;
+  left: 14px;
+  width: 13%;
+}
+
+.trd_scroll img {
 position: absolute;
     top: -41px;
     z-index: 1;
     left: 14px;
-    width: 16%;
+    width: 14%;
 }
+
 
 .trd_scroll h5 {
   text-transform: uppercase;
   color: var(--main-color);
-  font-size: 25px;
-  margin-top: -33px;
+  font-size: 20px;
+  margin-top: -29px;
   padding: 0px 10px;
   width: auto;
   position: absolute;
@@ -646,8 +652,8 @@ position: absolute;
 .trd_scroll .title_trd {
   text-transform: uppercase;
   color: var(--main-color);
-  font-size: 25px;
-  margin-top: -33px;
+  font-size: 20px;
+  margin-top: -29px;
   padding: 0px 10px;
   width: auto;
   margin-left: 90px;
@@ -905,7 +911,6 @@ visibility: visible;
 }
 
 .testimonial_heading h2 {
-  color: var(--main-color);
   font-weight: 700;
 }
 
@@ -985,7 +990,7 @@ visibility: visible;
   font-weight: 700;
 }
 
-.question_section h1 {
+.question_section h2 {
   color: var(--text-black);
   font-weight: 700;
   padding: 25px 0px;
@@ -1019,25 +1024,25 @@ visibility: visible;
   list-style: none;
 }
 
-.question_section ul li:before {
+/* .question_section ul li:before {
   content: "\f00c";
   font-family: FontAwesome;
   display: inline-block;
   margin-left: -1.3em;
   width: 1.3em;
   color: var(--main-color);
-}
+} */
 
-/* .question_section ul li:before {
+.question_section ul li:before {
   content: ""; 
   display: inline-block;
   height: 18px; 
-  width: 20px;
+  width: 1.3em;
   margin-left: -22px;
   margin-top: 5px;
   background: url('../assets/Icon/good.png');
   background-repeat: no-repeat;
-} */
+}
 
 
 /* 7 Scroll Css End  */
@@ -1293,22 +1298,26 @@ padding: 5px 15px 15px 15px;
 
 
 .const1 {
-  padding: 40px 10px 25px 10px;
-  background: #fff;
-  box-shadow: 0 0 250px rgba(3, 3, 3, 0.16);
+  border: 1px solid var(--third-color);
+  border-radius: 10px;
+  /* box-shadow: 0 0 250px rgba(3, 3, 3, 0.16); */
   transition: ease-in all 0.5s;
   width: 100%;
+  padding: 20px 20px;
+  background-color: var(--gray-section);
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
 }
 
 .const1 p {
   font-weight: bold;
-  font-size: 26px;
+  font-size: 30px;
+  margin-bottom: 0px;
 }
 
 .const1 span {
   transition: ease-in all 0.5s;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--main-bg-color);
   line-height: 20px;
 }

@@ -180,19 +180,19 @@ h1 {
     
     
 h1 {
-    font-size: 45px !important;
+    font-size: 36px !important;
   }
   
   h2 {
-    font-size: 34px;
+    font-size: 30px;
   }
   
   h3 {
-    font-size: 28px;
+    font-size: 22px;
   }
   
   h4 {
-    font-size: 24px;
+    font-size: 18px;
   }
   
   p {
@@ -491,4 +491,36 @@ h1 {
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { }
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    .trd_scroll img {
+  position: absolute;
+      top: -41px;
+      z-index: 1;
+      left: 14px;
+      width: 16%;
+  }
+  .sk::before {
+    content: '';
+    /* background: url(../assets/png/beforeImg.png) no-repeat center center/cover; */
+    background: url(../assets/png/leftimg.png) no-repeat center center/cover;
+    position: absolute;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+    right: 1000px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.sk::after {
+    content: '';
+    background: url(../assets/png/afterImg.png) no-repeat center center/cover;
+    position: absolute;
+    opacity: 1;
+    top: 0px;
+    right: 0px;
+    left: 830px;
+    bottom: 0px;
+    z-index: 2;
+}
+ }
