@@ -274,6 +274,7 @@ h1 {
     margin-left: 0px;
     position: inherit;
     background: linear-gradient(180deg, rgb(248 249 250) 0%, rgb(255 255 255) 0%);
+    font-size: 18px;
 }
 
 .trd_scroll h3 {
@@ -501,7 +502,6 @@ h1 {
   }
   .sk::before {
     content: '';
-    /* background: url(../assets/png/beforeImg.png) no-repeat center center/cover; */
     background: url(../assets/png/leftimg.png) no-repeat center center/cover;
     position: absolute;
     opacity: 1;
@@ -514,6 +514,7 @@ h1 {
 
 .sk::after {
     content: '';
+    filter: grayscale(1);
     background: url(../assets/png/afterImg.png) no-repeat center center/cover;
     position: absolute;
     opacity: 1;

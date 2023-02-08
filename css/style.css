@@ -448,12 +448,12 @@ p {
 
 .sk::before {
   content: '';
-  background: url('../assets/png/beforeImg.png') no-repeat center center/cover;
+  background: url(../assets/png/leftimg.png) no-repeat center center/cover;
   position: absolute;
   opacity: 1;
   top: 0px;
   left: 0px;
-  right: 1000px;
+  right: 1608px;
   bottom: 0px;
   z-index: 2;
 }
