@@ -1122,16 +1122,6 @@ visibility: visible;
   margin-bottom: 20px;
 }
 
-.footer h4::before {
-  content: '';
-  position: absolute;
-  opacity: 1;
-  z-index: 1;
-  width: 80px;
-  height: 5px;
-  margin-top: 30px;
-  border-bottom: 1px solid var(--sec-color);
-}
 
 .footer a {
   color: var(--sec-color);
