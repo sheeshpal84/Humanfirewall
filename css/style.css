@@ -40,7 +40,13 @@ h4 {
 }
 h5 {
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 300;
+  font-family: 'IBM Plex Sans', sans-serif !important;
+  line-height: 1.5; 
+}
+
+h6 {
+  font-size: 20px;
   font-family: 'IBM Plex Sans', sans-serif !important;
   line-height: 1.5; 
 }
