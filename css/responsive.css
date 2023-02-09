@@ -522,7 +522,6 @@ h1 {
     left: 1030px;
     bottom: 0px;
     z-index: 2;
-    filter: grayscale(1);
 }
 
 .const1 span {
