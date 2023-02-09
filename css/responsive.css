@@ -523,4 +523,11 @@ h1 {
     bottom: 0px;
     z-index: 2;
 }
+
+.const1 span {
+    font-size: 14px;
+}
+.const1 {
+    padding: 15px;
+}
  }
