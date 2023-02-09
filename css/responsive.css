@@ -224,11 +224,7 @@ h1 {
 .red {
     text-align: center;
 }
-.sec_scroll1 p {
-    text-align: center;
-    font-size: 16px;
-    padding-top: 0px !important;
-}
+
 .sec_scroll h2 {
     text-align: center;
     padding-bottom: 0px;
@@ -277,8 +273,10 @@ h1 {
     font-size: 18px;
 }
 
-.trd_scroll h3 {
-    line-height: 1.9;
+.trd_scroll h6 {
+    margin-top: 0px;
+    position: relative;
+    background: linear-gradient(180deg, rgb(248 249 250) 0%, rgb(255 255 255) 0%);
 }
 
 .left_centent_sub {
@@ -494,12 +492,12 @@ h1 {
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media only screen and (max-width: 1400px) and (min-width: 1200px) {
     .trd_scroll img {
-  position: absolute;
-      top: -41px;
-      z-index: 1;
-      left: 14px;
-      width: 16%;
-  }
+        position: absolute;
+        top: -27px;
+        z-index: 1;
+        left: 14px;
+        width: 12%;
+    }
   .sk::before {
     content: '';
     background: url(../assets/png/leftimg.png) no-repeat center center/cover;

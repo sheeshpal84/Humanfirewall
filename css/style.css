@@ -230,6 +230,10 @@ p {
   color: var(--sec-color);
 }
 
+.slick-slide img {
+  height: 40px;
+}
+
 /* dot animation */
 .loading-dots {
   text-align: center;
@@ -637,22 +641,16 @@ p {
 
 .trd_scroll img {
   position: absolute;
-  top: -34px;
+  top: -28px;
   z-index: 1;
   left: 14px;
-  width: 13%;
-}
-
-.trd_scroll img {
-position: absolute;
-    top: -41px;
-    z-index: 1;
-    left: 14px;
-    width: 14%;
+  width: 10%;
 }
 
 
-.trd_scroll h5 {
+
+
+.trd_scroll h6 {
   text-transform: uppercase;
   color: var(--main-color);
   font-size: 20px;
@@ -902,7 +900,7 @@ visibility: visible;
   border: none;
 }
 
-.blog_section h5 {
+.blog_section h6 {
   color: var(--text-black);
   font-style: normal;
   font-weight: 500;
@@ -1063,10 +1061,11 @@ visibility: visible;
   background-color: var(--navigation-color);
 }
 
-.Subscribe_box h2 {
+.Subscribe_box h3 {
   color: var(--sec-color);
   font-style: normal;
   font-weight: 600;
+  color: var(--sec-color);
   text-transform: capitalize;
 }
 
@@ -1120,7 +1119,7 @@ visibility: visible;
 }
 
 
-.footer h4 {
+.footer h6 {
   color: var(--sec-color);
   font-style: normal;
   font-weight: 500;
@@ -1197,6 +1196,7 @@ visibility: visible;
   bottom: 0px;
   left: 0px;
   opacity: 0.20;
+  z-index: -1;
 }
 
 .form_bg h1 {
@@ -1206,6 +1206,11 @@ visibility: visible;
 .form_bg p {
   color: var(--sec-color);
   inline-size: 600px;
+}
+
+.form_bg a {
+  text-decoration: none;
+  color: var(--gray-section);
 }
 
 .form_bg h6 {
@@ -1391,7 +1396,7 @@ padding: 5px 15px 15px 15px;
   height: 100%;
   width: 100%;
   background-color: var(--gray-section);
-  color: var(--main-color);
+  color: var(--main-bg-color);
   text-align: center;
   border-radius: 20px;
   backface-visibility: hidden;
@@ -1570,10 +1575,12 @@ padding: 5px 15px 15px 15px;
   color: var(--main-color);
 }
 
-.ContactUs p {
+.ContactUs p a {
   font-size: 16px;
   padding-bottom: 0px;
   font-weight: 500;
+  text-decoration: none;
+  color: var(--text-black);
 }
 
 .ContactUs p span {
