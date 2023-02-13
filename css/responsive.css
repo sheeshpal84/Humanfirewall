@@ -147,7 +147,18 @@ h1 {
   .mail_mobile {
     color: #fff;
 }
+.ContactUs p a {
+    color: #ffffff;
+}
 
+.request_contact  {
+    padding: 20px;
+}
+
+
+.request_demo {
+    padding: 20px;
+}
 
   }
 
@@ -304,6 +315,19 @@ h1 {
 .mail_mobile {
     color: #FFFFFF !important;
 }
+
+.ContactUs p a {
+    color: #ffffff;
+}
+
+.request_contact  {
+    padding: 25px;
+}
+
+
+.request_demo {
+    padding: 25px;
+}
   }
   
 
@@ -405,6 +429,19 @@ h1 {
 
 .mail_mobile {
     color: #fff;
+}
+
+.ContactUs p a {
+    color: #ffffff;
+}
+
+.request_contact  {
+    padding: 40px;
+}
+
+
+.request_demo {
+    padding: 40px;
 }
 
 }
