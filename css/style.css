@@ -1724,4 +1724,14 @@ background-repeat: no-repeat;
   padding: 50px 100px;
 }
 
+.Blog_card button {
+  background-color: var(--main-color);
+  padding: 10px 30px;
+  border: none;
+}
+
+.Blog_card button:hover {
+  background-color: var(--main-color);
+}
+
 /* blog section end  */
