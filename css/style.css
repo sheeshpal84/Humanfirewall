@@ -1121,6 +1121,10 @@ visibility: visible;
   border-top: 1px solid var(--sec-color);
 }
 
+.footer img {
+  height: 40px;
+}
+
 .footer .footer_centent p {
   color: var(--third-color);
   font-size: 16px;
@@ -1166,6 +1170,10 @@ visibility: visible;
   font-size: 14px;
   margin: 0px;
   font-weight: bold;
+}
+
+.address p a {
+line-height: 0px;
 }
 
 .address p span {
@@ -1754,3 +1762,9 @@ background-repeat: no-repeat;
 }
 
 /* blog section end  */
+
+
+
+.main-section{
+  margin-top: 80px;
+}
