@@ -70,6 +70,11 @@ p {
   --text-black: #000000;
 }
 
+
+.main-color {
+  color: var(--main-color);
+}
+
 .white-section {
   background-color: var(--section-color);
 }
@@ -169,6 +174,7 @@ p {
 
 .hero_content h5 span {
   color: var(--main-color);
+  display: block;
 }
 
 .hero_content p {
@@ -473,6 +479,10 @@ p {
   padding: 40px 0px;
 }
 
+.sec_section_content h2 br {
+  display: none;
+}
+
 .sec_section_content h2 span {
   color: var(--main-color);
 }
@@ -494,6 +504,10 @@ p {
   color: var(--text-black);
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.sec_scroll h4 span {
+  display: block;
 }
 
 .red {
@@ -533,6 +547,7 @@ p {
 
 .sec_scroll1 h4 span {
   color: green;
+  display: block;
 }
 
 .w-full {
@@ -1082,14 +1097,14 @@ visibility: visible;
   box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
 }
 
-.Subscribe_box button {
+.Subscribe_box .news_submit {
   width: 170px;
   height: 60px;
   background: var(--main-color);
   color: var(--sec-color);
 }
 
-.Subscribe_box button:hover {
+.Subscribe_box .news_submit:hover {
   color: var(--sec-color);
 }
 
@@ -1111,6 +1126,9 @@ visibility: visible;
   font-size: 16px;
 }
 
+ ul.footer_menu {
+  list-style: none !important;
+}
 
 .footer h6 {
   color: var(--sec-color);
@@ -1153,6 +1171,7 @@ visibility: visible;
 .address p span {
   font-size: 10px;
   font-weight: normal;
+  display: block;
 }
 
 .copyright p {

@@ -154,7 +154,9 @@ h1 {
 .request_contact  {
     padding: 20px;
 }
-
+.sec_section_content h2 br {
+    display: block;
+  }
 
 .request_demo {
     padding: 20px;
@@ -328,6 +330,10 @@ h1 {
 .request_demo {
     padding: 25px;
 }
+
+.sec_section_content h2 br {
+    display: block;
+  }
   }
   
 
