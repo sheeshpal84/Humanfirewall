@@ -1606,6 +1606,7 @@ padding: 5px 15px 15px 15px;
 .ContactUs p span {
   font-size: 12px;
   font-weight: normal;
+  display: block;
 }
 
 /* 1 Section end  */
@@ -1767,4 +1768,34 @@ background-repeat: no-repeat;
 
 .main-section{
   margin-top: 80px;
+}
+
+.defence-section {
+  margin-top: 80px;
+}
+
+.game-section {
+  margin-top: 80px;
+}
+
+.game-section h1 span {
+  text-transform: initial;
+  display: block;
+}
+.defence-section h1  {
+  text-transform: initial;
+}
+
+.defence-section h1 span {
+  text-transform: initial;
+  display: block;
+}
+
+.lottiefile {
+  height: 220px;
+  width: 220px;
+}  
+
+.all-blog-section {
+  margin-top: 40px;
 }
